@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Tênis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@300;400;500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Victor Shoes</h1>
+            
+            <nav class="container">
+                <ul class="menu">
+                    <li class="menu-item">
+                        Sobre a Loja
+                        <ul class="submenu">
+                            <li>
+                                <a href="#">Como chegar</a>
+                            </li>
+                            <li>
+                                <a href="#">Contato</a>
+                            </li>
+                            <li>
+                                <a href="#">Sobre nós</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Produtos
+                        <ul class="submenu">
+                            <li>
+                                <a href="#">Feminino</a>
+                            </li>
+                            <li>
+                                <a href="#">Masculino</a>
+                            </li>
+                            <li>
+                                <a href="#">Casual</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container conteudo">
+        <main>
+            <section class="destaque">
+                <h2>Sobre a Loja</h2>
+                <article class="noticia">
+                    <hr>
+                    <img src="./imagem/interiordaloja.jpg">
+                    <div class="text-container">
+                        <h3>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolorem harum quos quidem fugiat iure aliquid veritatis ut doloremque! Sunt non distinctio repellendus, consequatur expedita velit voluptas unde dignissimos pariatur!
+                        </h3>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <div class="produtos">
+        <h1>Produtos</h1>
+        <hr>
+        <ul class="tenis-produtos">
+            <section class="destaque">
+                <article class="noticia">
+                    <li>
+                        <img src="./imagem/tenis 1.jpg" width="220">
+                        <div class="info-produto">
+                        <p>Tenis Polo</p>
+                        <button type="button">Compre aqui</button>
+                    </div>
+                    </li>
+                </article>
+                <article class="noticia">
+                    <li>
+                        <img src="./imagem/tenis 2.jpg" width="220">
+                        <div class="info-produto">
+                        <p>Tenis Polo</p>
+                        <button type="button">Compre aqui</button>
+                    </div>
+                    </li>
+                </article>
+                <article class="noticia">
+                    <li>
+                        <img src="./imagem/tenis 2.jpg" width="220">
+                        <div class="info-produto">
+                        <p>Tenis Polo</p>
+                        <button type="button">Compre aqui</button>
+                    </div>
+                    </li>
+                </article>
+                <article class="noticia">
+                    <li>
+                        <img src="./imagem/tenis 2.jpg" width="220">
+                        <div class="info-produto">
+                        <p>Tenis Polo</p>
+                        <button class="button" type="button">Compre aqui</button>
+                    </div>
+                    </li>
+                </article>
+            </section>
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('.botao-menu button').click(function () {
+                $('.menu').slideToggle();
+            })
+        })
+    </script>
+</body>
+
+</html>

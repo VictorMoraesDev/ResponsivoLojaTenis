@@ -1,0 +1,546 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    
+}
+
+.container {
+    max-width: 1024px;
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+.container h1 {
+ margin: 0;
+ color: #fff;
+ margin-bottom: 0;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+header {
+    margin-bottom: 20px;
+    padding: 10px 0 0 ;
+    border-bottom: 1px solid #ccc;
+    background-color: blue;
+}
+
+.submenu {
+    display: none;
+    border: 1px solid;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    max-width: 300px;
+    margin-top: 13%;
+}
+
+
+
+.menu > li {
+    float: left;
+    list-style: none;
+    padding: 16px;
+    border-top: 4px solid transparent;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.menu li:hover {
+    border-color: blue;
+}
+
+.submenu li {
+    display: block;
+    padding: 8px;
+    
+}
+
+article img {
+    width: 320px;
+    height: 320px;
+    margin-top: -40px;
+}
+
+ .conteudo h2{
+    margin-left: 40%;
+    padding: 8px;
+    color: blue;
+}
+
+.conteudo h3 {
+    margin-left: 40%;
+    padding: 8px;
+    margin-top: -26%;
+    width: 58%;
+    box-sizing: border-box;
+    margin-right: 800px;
+}
+
+hr {
+    border: 1px solid blue;
+    margin-top: 10px;
+    margin-bottom: -10px ;
+    width: 54%;
+    margin-left: 40% ;
+}
+
+
+.menu > li{
+    display: inline-block;
+}
+
+.menu-wrapper {
+    text-align: center;
+    margin-top: 12px;
+}
+
+
+.produtos h1{
+    margin-top: 14%;
+    margin-left: 15%;
+    color: blue;
+}
+
+.produtos hr{
+    width: 10%;
+    width: 67%;
+    margin-left: 15%;
+
+    
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin-top: 12px;
+    margin-left: 15%;
+}
+
+
+p {
+    text-align: center;
+}
+
+.tenis-produtos .destaque {
+    display: flex;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+    position: relative;
+    left: 20%;
+    transform: translateY(-5%);
+    margin-top: 10px;
+}
+
+button:hover{
+    background-color: darkblue;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu-item {
+    position: relative;
+    color: #fff;
+    cursor:pointer;
+    padding: 16px;
+    border-top: 4px solid transparent;
+}
+
+
+
+.tenis-produtos img {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.tenis-produtos li {
+    width: 220px; /* Largura desejada para as imagens */
+    margin-right: 20px; /* Espaço entre os itens */
+   
+
+}
+
+
+
+.tenis-produtos li img {
+    width: 100%; /* Ajusta a largura da imagem para preencher completamente o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+
+}
+
+
+
+
+
+@media screen and (max-width: 640px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu-item {
+        white-space: nowrap;
+    }
+
+
+
+    .destaque h2, .destaque hr {
+        position: absolute;
+        width: 100%;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+    
+
+    header {
+        padding: 10px 0;
+    }
+
+    .conteudo {
+        text-align: center;
+    }
+
+    .conteudo h2,
+    .conteudo h3 {
+        margin-left: 0;
+        width: 100%;
+    }
+
+   
+
+    hr {
+        position: static;
+        top: 100%;
+        margin-top: 10px;
+        border-color: blue;
+    }
+
+    .text-container{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .text-container h3 {
+        width: 100%;
+        margin-top: 10px;
+        max-width: 100%;
+
+    }
+
+    .noticia img {
+        width: 100%;
+        margin: 0 auto;
+    }
+      
+    .text-container {
+        margin-top: 10px; /* Adicionando um espaço entre a imagem e o texto */
+        z-index: 1;
+    }
+
+    .noticia{
+        display: block;
+        text-align: center;
+    }
+
+    .noticias .noticia {
+        margin-bottom: 32px;
+    }
+
+    .destaque h2  {
+      top: 100%;
+      margin-top: -280px;
+      margin-left: -32%;
+    }
+
+    .destaque hr {
+        top: 65%;
+      margin-left: -60%;
+      margin-left: -15%;
+      width: 70%;
+      margin-left: 1%;
+    }
+
+    .noticia hr {
+        margin-top: 10px; /* Adiciona margem acima da hr */
+        
+    }
+
+    .destaque{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .article img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-top: -40px;
+    }
+
+    .destaque .noticia img {
+        max-width: 100%;
+        height: auto;
+        width: auto;
+        max-height: none;
+        margin-right: 0;
+    }
+
+ 
+
+    .destaque .noticia a {
+        font-size: 1.5em;
+    }
+
+    .destaque .noticia img {
+        margin-right: 0;
+    }
+
+
+    button {
+    margin-left: -110px ;    
+}
+
+.tenis-produtos .destaque {
+    display: block; 
+}
+
+.noticia img {
+    width: 100%;
+}
+
+.noticia h2 {
+    margin-top: 10px;
+    
+}
+
+
+.tenis-produtos .destaque{
+    display: block;
+}
+
+.destaque img {
+    margin-top: 10px; 
+}
+
+.destaque h3 {
+    margin-top: 60px; 
+}
+       }
+   
+
+
+       @media screen and (min-width: 641px) and (max-width: 1023px) {
+        body {
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 90%;
+            margin-right: auto ;
+            margin-left: auto;
+        }
+    
+        .destaque {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .noticia {
+            padding: 0 10px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .destaque h2  {
+            position: relative;
+            top: auto;
+            margin-top: -240px;    
+            order: 2;
+            margin-left: -410px;
+            font-size: 30px;
+      }
+
+
+      .text-container {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+      }
+
+      .text-container h3 {
+        width: 100%;
+        margin-top: 100%;
+        max-width: 100%;
+        font-size: 21px;
+      }
+     
+         .destaque hr {
+            width: 550px;
+            margin-left: -0px;
+            position: absolute;
+            margin-top: -110%;    
+            bottom: 0;
+       }
+
+        .menu{
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: -10px;
+        }
+
+         h1{
+            white-space: nowrap;
+        }
+
+        .destaque img {
+            margin-top: 20px;
+            max-width: 70%;
+            width: 100%;
+            height: auto;
+
+        }
+
+        .destaque .text-container h3 {
+            max-width: 50%;
+            width: 100%;
+            margin-top: 120px;
+            margin-left: -15%;
+        }
+
+        .destaque h3 {
+            margin-top: -120px;
+        }
+
+        .destaque .text-container {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-left: 50%;
+            margin-right: -50%;
+        }
+        .produtos h1{
+            margin-top: 220px;
+        }
+
+        .tenis-produtos {
+            display: grid;
+            grid-template-columns: repeat(2, 49%);
+            grid-gap: 10px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .tenis-produtos .noticia {
+            flex-basis: calc(50% - 20px);
+            margin-bottom: 20px;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .tenis-produtos .destaque {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .tenis-produtos li {
+            width: 100%;
+        }
+
+        .tenis-produtos .noticia li {
+            width: 100%;
+        }
+
+        .tenis-produtos .noticia img{
+            width: 100%;
+            height: auto;
+        }
+
+        .tenis-produtos li img {
+            width: 100%;
+            height: auto;
+            margin-bottom: -60px;
+        }
+      
+        .tenis-produtos .info-produto {
+            align-items: center;
+            flex-direction: column;
+            box-sizing: border-box;
+            right: 120px;
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(255, 255, 255 0.8);
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+
+         .tenis-produtos p {
+            margin: -2px 0 ;
+            margin-top: 400%;
+            margin-left: 40%;
+            font-size: 25px;
+        }
+
+         button {
+            font-size: 20px;
+         }
+
+       }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
